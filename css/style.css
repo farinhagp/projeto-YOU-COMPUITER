@@ -1,0 +1,130 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do Menu */
+#menu {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Estilos da Área Principal */
+.principal, .quem-somos, .contato, .pecas, .computador-completo {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos dos Produtos */
+.produto {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.produto p {
+    color: #666;
+}
+
+.botao-compra {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos do Rodapé */
+#rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;  /* Torna o rodapé fixo */
+    bottom: 0;       /* Fixa o rodapé na parte inferior */
+    left: 0;         /* Ajusta a posição para o lado esquerdo */
+    width: 100%;     /* Faz o rodapé ocupar toda a largura da página */
+    z-index: 1000;   /* Garante que o rodapé fique acima de outros elementos */
+}
+
+#rodape p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+/* Estilos do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Topo */
+#topo {
+    background-color: #333; /* Cor de fundo do topo */
+    color: white;           /* Cor do texto */
+    padding: 20px;         /* Espaçamento interno */
+    text-align: center;    /* Alinhamento do texto */
+    font-family: 'Press Start', sans-serif; /* Aplica a fonte Roboto */
+    font-size: 16px;
+}
