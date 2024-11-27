@@ -1,3 +1,16 @@
+<?php
+
+    include_once "sessao.php";
+
+    if (logado()) {
+        echo "<p>Bem-vindo <b>$_SESSION[usuario]</b>!</p>";
+    } else {
+        header("Location: Form.login.Adm.php");
+        exit();
+    }
+
+?>
+
 <h1>Painel Admin</h1>
 <nav>
     
