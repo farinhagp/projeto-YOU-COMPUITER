@@ -5,7 +5,7 @@ include_once 'menu.php';
 
 <div class="contato">
     <h1>Entre em Contato</h1>
-    <form action="enviar_contato.php" method="POST">
+    <form action="Enviar_msg.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         
