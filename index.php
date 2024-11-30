@@ -7,7 +7,7 @@ include_once 'menu.php';
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/topo.css">
-    <!-- Outros links de CSS -->
+   
 </head>
 
 
