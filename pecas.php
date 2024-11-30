@@ -4,7 +4,8 @@ include_once 'menu.php';
 ?>
 
 <div class="pecas">
-    <h1>Peças de Hardware</h1>
+   
+<h1>Peças de Hardware</h1>
     <div class="produto">
         <img src="imagens/51D3DrDmwkL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Processador">
         <h2>Processador Ryzen 7</h2>
