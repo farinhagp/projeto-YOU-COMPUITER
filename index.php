@@ -8,9 +8,9 @@ include_once 'menu.php';
 <div class="sidebar">
   <ul>
     <?php
-    $categorias = ["Categoria 1", "Categoria 2", "Categoria 3"];
+    $categorias = ["Computadores completos 1", "Categoria 2", "Categoria 3"];
     foreach ($categorias as $categoria) {
-        echo "<li><a href='#'>{$categoria}</a></li>";
+        echo "<li><a href='computador_completo.php'>{$categoria}</a></li>";
     }
     ?>
   </ul>
