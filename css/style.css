@@ -129,44 +129,31 @@ form input[type="submit"]:hover {
     font-size: 16px;
 }
 
-    /* Estilo da sidebar quadrada fixa no canto */
-    .sidebar {
-        width: 250px;
-        height: 250px;
-        background-color: #333;
-        color: white;
-        padding: 15px;
-        position: fixed;
-        bottom: 20px; /* Ajusta para o canto inferior */
-        right: 20px; /* Ajusta para o canto direito */
-        border-radius: 10px; /* Bordas arredondadas */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow-y: auto; /* Permite rolagem se as categorias forem longas */
-    }
+.sidebar {
+    width: 250px;
+    height: 250px; /* Define altura para quadrado */
+    background-color: #333;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Bordas arredondadas, se desejar */
+}
 
-    .sidebar h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-    .sidebar ul {
-        list-style-type: none;
-        padding: 0;
-    }
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
 
-    .sidebar ul li {
-        margin: 10px 0;
-    }
-
-    .sidebar ul li a {
-        text-decoration: none;
-        color: white;
-        padding: 10px;
-        display: block;
-        background-color: #444;
-        border-radius: 5px;
-    }
-
-    .sidebar ul li a:hover {
-        background-color: #575757;
-    }
+.sidebar ul li a:hover {
+    background-color: #555;
+}
