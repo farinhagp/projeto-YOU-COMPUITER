@@ -1,16 +1,18 @@
 /* Estilos Globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Gradiente de fundo */
+    color: white;
 }
 
 /* Estilos do Menu */
 #menu {
-    background-color: #444;
-    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.7); /* Fundo translúcido */
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 #menu ul {
@@ -20,69 +22,95 @@ body {
 }
 
 #menu li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 #menu a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease; /* Efeito de transição no hover */
 }
 
-/* Estilos da Área Principal */
+#menu a:hover {
+    background: rgba(255, 165, 0, 0.8); /* Cor vibrante */
+    color: #333;
+}
+
+/* Estilos da Área Principal com Bloco Transparente */
 .principal, .quem-somos, .contato, .pecas, .computador-completo {
     padding: 20px;
-    background-color: #fff;
+    background: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
     margin: 20px auto;
     max-width: 800px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
 }
 
-/* Estilos dos Produtos */
+/* Estilos dos Produtos com Bloco Translúcido */
 .produto {
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+    border: 1px solid #444; /* Borda suave */
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    transition: transform 0.3s ease, background 0.3s ease; /* Efeito de zoom */
+    backdrop-filter: blur(5px); /* Desfoque no fundo */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Aumenta suavemente o tamanho */
+    background: rgba(255, 255, 255, 0.2); /* Aumenta a opacidade do fundo */
 }
 
 .produto img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .produto h2 {
     font-size: 1.5em;
-    color: #333;
+    color: #ff8c00; /* Cor vibrante para o título */
 }
 
 .produto p {
-    color: #666;
+    color: #bbb; /* Texto suave */
 }
 
 .botao-compra {
     display: inline-block;
-    padding: 10px 15px;
-    background-color: #28a745;
+    padding: 12px 18px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradiente vibrante no botão */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-/* Estilos do Rodapé */
+.botao-compra:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c); /* Inverte o gradiente ao passar o mouse */
+}
+
+/* Estilos do Rodapé com Bloco Translúcido */
 #rodape {
-    background-color: #333;
+    background: rgba(0, 0, 0, 0.7); /* Fundo translúcido */
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;  /* Torna o rodapé fixo */
-    bottom: 0;       /* Fixa o rodapé na parte inferior */
-    left: 0;         /* Ajusta a posição para o lado esquerdo */
-    width: 100%;     /* Faz o rodapé ocupar toda a largura da página */
-    z-index: 1000;   /* Garante que o rodapé fique acima de outros elementos */
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
 }
 
 #rodape p {
@@ -90,56 +118,77 @@ body {
     font-size: 0.9em;
 }
 
-
-/* Estilos do Formulário */
+/* Estilos do Formulário com Bloco Translúcido */
 form {
     display: flex;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    backdrop-filter: blur(8px); /* Desfoque no fundo */
 }
 
 form label {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
 }
 
 form input, form textarea {
     margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #444;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1); /* Transparente */
+    color: white;
 }
 
 form input[type="submit"] {
-    background-color: #007bff;
+    background: linear-gradient(to right, #00b3b3, #008080); /* Gradiente no botão */
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px;
+    transition: background 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background: linear-gradient(to right, #008080, #00b3b3); /* Inverte o gradiente ao passar o mouse */
 }
 
-/* Estilos do Topo */
+/* Estilos do Topo com Bloco Translúcido */
 #topo {
-    background-color: #333; /* Cor de fundo do topo */
-    color: white;           /* Cor do texto */
-    padding: 20px;         /* Espaçamento interno */
-    text-align: center;    /* Alinhamento do texto */
-    font-family: 'Press Start', sans-serif; /* Aplica a fonte... */
-    font-size: 16px;
+    background: rgba(0, 0, 0, 0.8); /* Fundo translúcido */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
 }
 
+/* Sidebar com Bloco Translúcido */
 .sidebar {
     width: 250px;
-    height: 250px; /* Define altura para quadrado */
-    background-color: #333;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.8); /* Fundo translúcido */
     position: fixed;
     top: 50%;
     left: 0;
-    transform: translateY(-50%); /* Centraliza verticalmente */
+    transform: translateY(-50%);
     padding: 20px;
     box-sizing: border-box;
-    border-radius: 10px; /* Bordas arredondadas, se desejar */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+.sidebar:hover {
+    transform: translateY(-50%) scale(1.1); /* Efeito de aumento da sidebar */
 }
 
 .sidebar ul {
@@ -151,9 +200,11 @@ form input[type="submit"]:hover {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-    background-color: #555;
+    background-color: #ff8c00; /* Cor vibrante ao passar o mouse */
 }

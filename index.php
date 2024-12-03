@@ -26,12 +26,8 @@ include_once 'menu.php';
 
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/topo.css">
-   
+    <link rel="stylesheet" href="css/style.css">  
 </head>
-
-
 
 <div class="principal">
     <h1>Bem-vindo ao nosso site!</h1>
@@ -43,3 +39,6 @@ include_once 'menu.php';
 <?php
 include_once 'rodape.php';
 ?>
+
+
+
