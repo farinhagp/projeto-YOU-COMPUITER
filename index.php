@@ -4,13 +4,20 @@ include_once 'menu.php';
 ?>
 
 <body>
-
-<div class="sidebar">
+  <div class="sidebar">
   <ul>
     <?php
-    $categorias = ["Computadores completos 1", "Categoria 2", "Categoria 3"];
-    foreach ($categorias as $categoria) {
+    $categorias = ["Computadores completos "];
+    foreach ($categorias as $categoria) 
         echo "<li><a href='computador_completo.php'>{$categoria}</a></li>";
+    
+    $categorias = ["Processadores"];
+    foreach ($categorias as $categoria) 
+        echo "<li><a href='pecas.php'>{$categoria}</a></li>";
+
+   $categorias = ["Placas de Videos"];
+    foreach ($categorias as $categoria) {
+        echo "<li><a href='pecas.php'>{$categoria}</a></li>";
     }
     ?>
   </ul>
