@@ -1,0 +1,6 @@
+Resumo da Compra
+-----------------------------
+Produto: Computador Gamer Pro - Preço: R$ 5.999,90
+Produto: Placa Mãe AORUS - Preço: R$ 799,90
+-----------------------------
+Total: R$ 6.799,80

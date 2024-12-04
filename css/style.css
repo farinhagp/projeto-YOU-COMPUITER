@@ -380,3 +380,138 @@ form input[type="submit"]:hover {
 .login a:hover, .registro a:hover {
     color: #008080; /* Cor ao passar o mouse */
 }
+
+/* carrinho de compras*/
+/* Estilo do Container do Carrinho */
+.carrinho-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo translúcido */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+}
+
+/* Título do Carrinho */
+.carrinho-container h2 {
+    color: #ff8c00;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Lista de Produtos no Carrinho */
+.carrinho-itens {
+    list-style: none;
+    padding: 0;
+}
+
+.carrinho-itens li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.carrinho-itens li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Detalhes do Produto no Carrinho */
+.carrinho-item-detalhes {
+    flex: 1;
+    color: #fff;
+}
+
+.carrinho-item-detalhes h3 {
+    font-size: 1.4em;
+    color: #ff8c00;
+    margin: 0 0 10px;
+}
+
+.carrinho-item-detalhes p {
+    color: #bbb;
+    margin: 0;
+}
+
+/* Botões de Ação */
+.carrinho-botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botao-remover, .botao-comprar {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+/* Botão Remover */
+.botao-remover {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.botao-remover:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+/* Botão Comprar */
+.botao-comprar {
+    background: linear-gradient(to right, #00b3b3, #008080);
+}
+
+.botao-comprar:hover {
+    background: linear-gradient(to right, #008080, #00b3b3);
+}
+
+/* Estilo do Resumo */
+.carrinho-resumo {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+}
+
+.carrinho-resumo h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+
+.carrinho-resumo p {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0;
+}
+
+/* Botão Finalizar Compra */
+.botao-finalizar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #32cd32, #228b22);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.botao-finalizar:hover {
+    background: linear-gradient(to right, #228b22, #32cd32);
+}
