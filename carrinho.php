@@ -18,11 +18,9 @@ if (isset($_POST['finalizar'])) {
         $total = 0;
         $conteudo = "Resumo da Compra\n";
         $conteudo .= "-----------------------------\n";
-        $produtos = [];
 
-        foreach ($_SESSION['cart'] as $item) {
+        foreach ($SESSION['cart'] as $item) {
             $conteudo .= "Produto: " . $item['name'] . " - Preço: R$ " . number_format($item['price'], 2, ',', '.') . "\n";
-            $produtos[] = ['name' => $item['name'], 'price' => $item['price']];
             $total += $item['price'];
         }
 
@@ -30,20 +28,22 @@ if (isset($_POST['finalizar'])) {
         $conteudo .= "Total: R$ " . number_format($total, 2, ',', '.') . "\n";
 
         // Salvar arquivo
-        $arquivo = 'compra_' . date('Ymd_His') . '.txt';
+        $arquivo = 'compra' . date('Ymd_His') . '.txt';
         file_put_contents($arquivo, $conteudo);
 
         // Inserir no banco de dados
-        $stmt = $conn->prepare("INSERT INTO compras (produto, preco, total) VALUES (?, ?, ?)");
-        foreach ($produtos as $produto) {
-            $stmt->bind_param("sdd", $produto['name'], $produto['price'], $total);
+        $stmt = $conexao->prepare("INSERT INTO compras (produto, preco, total) VALUES (?, ?, ?)");
+
+        foreach ($_SESSION['cart'] as $item) {
+            $stmt->bind_param("sdd", $item['name'], $item['price'], $total);
             $stmt->execute();
         }
+
         $stmt->close();
 
         // Limpar o carrinho
         unset($_SESSION['cart']);
-        echo "<script>alert('Compra finalizada! Resumo salvo no arquivo e no banco de dados.');</script>";
+        echo "<script>alert('Compra finalizada!');</script>";
     } else {
         echo "<script>alert('O carrinho está vazio!');</script>";
     }
