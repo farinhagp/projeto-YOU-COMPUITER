@@ -2,7 +2,7 @@
 session_start();
 include_once 'topo.php';
 include_once 'menu.php';
-include_once "/config.inc.php";
+include_once "config.inc.php";
 
 // Remover item do carrinho
 if (isset($_POST['remove'])) {
@@ -109,5 +109,5 @@ if (isset($_POST['finalizar'])) {
 
 <?php
 include_once 'rodape.php';
-$conn->close();
+$conexao->close();
 ?>
